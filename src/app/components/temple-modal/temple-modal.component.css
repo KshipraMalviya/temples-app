@@ -1,0 +1,98 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #0a0908;
+  margin: auto;
+  border: 1px solid #888;
+  width: 50%;
+  height: 30rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: popIn;
+  animation-duration: 0.4s;
+  color: whitesmoke;
+}
+
+.modal-content::-webkit-scrollbar { 
+  display: none; 
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translate(0%, 0%) scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(1);
+  }
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: sticky;
+  width: 100%;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 1px 16px;
+  background-color: #fdf8f5;
+  color: black;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-body {
+  padding: 2% 5%;
+}
+
+.modal-footer {
+  padding: 1px 16px;
+  background-color: #fdf8f5;
+  color: black;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 2px;
+}
+
+@media (max-width: 1000px) {
+  .modal-content {
+    width: 90%; /* Adjust the width for even smaller screens */
+  }
+}

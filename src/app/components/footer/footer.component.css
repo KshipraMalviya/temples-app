@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background: black;
+    font-family: Poppins;
+}
+
+div{
+    margin: 0;
+    padding: 2%;
+    text-align: center;
+}
+
+#heart{
+    color: red;
+}
+
+#footer{
+    border: 1px solid #b5838d;
+}
